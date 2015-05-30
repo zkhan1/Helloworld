@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld Office Locations</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="miles">miles</string>
+    <string name="pound_signs">#,###</string>
+    <string name="title_activity_location_details">Location Details</string>
+    <string name="directions">Directions</string>
+    <string name="office_image">Office Image</string>
+    <string name="hellow_world">Hello World!</string>
+    <string name="distance_title">Distance</string>
+
+</resources>

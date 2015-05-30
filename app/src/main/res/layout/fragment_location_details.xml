@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="locations.company.com.helloworld.fragments.LocationsFragmentDetails"
+    android:id="@+id/fragmentLocationDetails"
+    android:weightSum="1">
+
+        <View
+            android:id="@id/action_menu_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:background="@color/secondary_color" />
+
+
+
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_menu_divider"
+                android:text="@string/hello_world"
+                android:textSize="26sp"
+                android:padding="10dp"
+                android:textColor="@color/secondary_color"
+                android:layout_weight="2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_above="@+id/imageView"
+                android:layout_toLeftOf="@+id/mapButton"
+                android:layout_toStartOf="@+id/mapButton" />
+
+
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:padding="5dp"
+                android:layout_gravity="center|left|top"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_column="0"
+                android:layout_below="@+id/nameTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/phoneButton"
+            android:layout_height="@dimen/action_view_size"
+            android:layout_width="50dp"
+            android:background="@drawable/circle"
+            android:drawableEnd="@drawable/ic_action_device_access_call"
+
+            style="?android:attr/buttonBarButtonStyle"
+            android:nestedScrollingEnabled="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/mapButton"
+            android:layout_toStartOf="@+id/mapButton"
+            android:layout_margin="@dimen/card_spacing"
+            android:gravity="center"
+            android:padding="7dp" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_height="@dimen/action_view_size"
+            android:layout_margin="@dimen/card_spacing"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:drawableEnd="@drawable/ic_action_location_map"
+            style="?android:attr/buttonBarButtonStyle"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="7dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/addressTextView"
+            android:contentDescription="@string/office_image"
+             />
+
+
+
+</RelativeLayout>

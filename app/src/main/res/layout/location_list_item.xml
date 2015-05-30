@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:background="@color/secondary_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/primary_color"
+            android:gravity="center" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distanceTitle"
+                android:text="@string/distance_title"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:layout_above="@id/distanceTextView"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/distanceTextView"
+                android:text="@string/pound_signs"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/milesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distanceTextView"
+                android:textColor="#ffffff"
+                android:text="@string/miles"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="@string/hello_world"
+                android:id="@+id/nameTextView"
+                android:textSize="24dp"
+                android:textColor="#ff500e"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:id="@+id/addressTextView"
+                android:text="@string/hello_world"
+                android:textColor="#000000"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

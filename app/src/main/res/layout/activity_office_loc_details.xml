@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helloworld.officelocations.activities.LocationDetailsActivity">
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <fragment
+        android:id="@+id/locationDetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapFragment"
+        class="locations.company.com.helloworld.fragments.LocationsFragmentDetails"
+        tools:layout="@layout/fragment_location_details"
+        android:layout_alignParentBottom="true"/>                
+
+</RelativeLayout>
